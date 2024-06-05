@@ -1,0 +1,87 @@
+.main-content-interview {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: #F2E2C8;
+}
+
+.broedtekst {
+    font-family: 'roboto', sans-serif;
+}
+
+
+.overskrift {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.head-quote {
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+    margin-top: 210px;
+    margin-bottom: 210px;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: 'roboto', sans-serif;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.broedtekst-1 {
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+
+.broedtekst-2 {
+    margin-bottom: 20px;
+}
+
+
+/* Container for h1, h2 og billedet */
+.column-head-wrap {
+    width: 50%;
+    margin-right: 40px;
+}
+
+/* Container for h1 og h2 */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Stil til billedet */
+.karoline-picture {
+    width: 80%; /* Juster bredden efter behov */
+    height: 40%;
+}
+
+/* Stil til hovedindholdet */
+.karoline-article-content {
+    display: flex;
+    flex-direction: row;
+    background: inherit;
+    padding: 20px;
+    margin: 20px;
+    width: 1000px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/* Stil til brødteksten */
+.column-body-wrap {
+    margin-top: 20px;
+    width: 50%;
+}

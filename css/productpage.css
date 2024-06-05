@@ -1,0 +1,236 @@
+body {
+    
+    background-color: #F2E2C8;
+}
+
+.main-content {
+    width:1300px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+.product-spot {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 0;
+    z-index: 1;
+    position: relative;
+    height: 650px;
+
+
+}
+
+
+.highlight {
+    color: rgb(206, 0, 0); /* Rød farve */
+    font-style: italic; /* Italic skrift */
+    font-weight: bold; /* Fed skrift */
+}
+
+.bottle-strawberry-picture {
+    width: 48% !important;
+    margin-top: 25px;
+}
+
+.bottle-libra-picture {
+
+    width: 55% !important;
+    height: auto; /* For at sikre, at billedet bevarer proportionerne */
+    display: block; /* Sikrer, at billedet er en blok og kan ændres i størrelse */
+    margin: auto; /* Centrerer billedet, hvis det er nødvendigt */
+    margin-top: 25px;
+    
+}
+
+.product-spot-item {
+    background-color:rgb(255, 255, 255);
+    width: 32%;
+    text-align: center;
+}
+
+.product-spot-item > img {
+width:50%;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 75%;
+    /* left: 50%; */
+    transform: translate(-30%, -30%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* padding: 20px; */
+    /* border-radius: 10px; */
+    width: 80%;
+    z-index: 2;
+}
+
+.text-overlay h2 {
+    margin: 0 0 10px 0;
+    font-size:large;
+}
+
+.text-overlay p {
+    margin: 3px 0;
+    font-size: smaller;
+    font-family: 'roboto', sans-serif;
+}
+
+.button-overlay {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00562D; /* Knappens baggrundsfarve */
+    color: white;
+    border: 2px solid white; /* Hvid streg rundt om knappen */
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2;
+    ;
+}
+
+.button-overlay:hover {
+    background-color: #353535; /* Farveændring ved hover */
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .product-spot {
+        display: flex;
+        flex-direction: column; /* Skift til kolonne layout */
+        align-items: center; /* Centrer indholdet horisontalt */
+        justify-content: center; /* Centrer indholdet vertikalt */
+        width: 100%;
+        height: auto;
+        padding: 10px; /* Juster padding for bedre layout */
+        box-sizing: border-box;
+    }
+
+    .bottle-strawberry-picture, .bottle-libra-picture {
+        width: 80%; /* Juster denne værdi efter behov for at gøre billederne mindre */
+        margin-top: 10px;
+    }
+
+    .product-spot-item {
+        width: 80%; /* Juster denne værdi efter behov for at gøre elementerne mindre */
+        margin-bottom: 20px;
+        padding: 10px; /* Juster padding for bedre layout */
+        box-sizing: border-box;
+    }
+
+    .text-overlay {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin: 10px 0;
+        font-size: smaller;
+        font-family: 'roboto', sans-serif;  
+    }
+
+    .button-overlay {
+        width: 40%;
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+/* Media Query for Tablets and above */
+@media (min-width: 481px) {
+    .content-wrapper {
+        flex-direction: row; /* Skift til række når skærmen er bred nok */
+        justify-content: center; /* Centrerer indholdet horisontalt */
+    }
+
+    .text-content, .image-content {
+        text-align: left; /* Justerer tekstindholdet tilbage til venstre for bredere skærme */
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #F2E2C8;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+
+  
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  q {
+    font-style: italic;
+    font-size: 1.2em; /* Juster størrelsen efter behov */
+    font-family:'roboto', sans-serif; ;
+  }
+
+
+  /* Position the "prev button" to the left */
+  .prev {
+    left: 200px; /* Juster denne værdi for at flytte den nærmere midten */
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 200px; /* Juster denne værdi for at flytte den nærmere midten */
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.9s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: rgb(0, 0, 0);}

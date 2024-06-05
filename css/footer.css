@@ -1,0 +1,72 @@
+
+/* Stilarter for mobile skærme */
+@media (max-width: 500px) {
+    /* Tilpasninger til layout, størrelser og placering for mobile */
+    .container {
+        width: 90%; /* Gør containeren lidt smalere på mobile skærme */
+        margin: 0 auto; /* Centrer containeren */
+    }
+    
+    .flexbox-row {
+        flex-direction: column;
+    }
+    
+    .image-wrapper {
+        width: 100%; /* Gør billedet og teksten fuld bredde */
+    }
+
+    footer {
+        padding: 10px; /* Reducer polstring for at passe bedre til små skærme */
+    }
+
+    .footer-content h2 {
+        font-size: 1.2em; /* Tilpas font-størrelse for mobile */
+    }
+
+    .footer-content p {
+        font-size: 1em; /* Tilpas font-størrelse for mobile */
+    }
+}
+
+/* Stilarter for desktopskærme */
+@media (min-width: 501px) {
+    /* Tilpasninger til layout, størrelser og placering for desktop */
+    .container {
+        width: 80%; /* Gør containeren lidt bredere på desktopskærme */
+        margin: 0 auto; /* Centrer containeren */
+    }
+
+    .flexbox-row {
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 20px; /* Tilføj lidt mere polstring til desktop */
+    }
+
+    .footer-content h2 {
+        font-size: 20px; /* Tilpas font-størrelse for desktop */
+    }
+
+    .footer-content p {
+        font-size: 20x; /* Tilpas font-størrelse for desktop */
+    }
+}
+
+footer {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Standard padding, vil blive overskrevet af medieforespørgsler */
+}
+
+.footer-content {
+    text-align: center; /* Centrerer teksten inden for .footer-content */
+}
+
+.socialmedia img{
+width: 10px;
+height: auto;
+}

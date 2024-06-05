@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body h1, h2, h3 {
+    font-family: 'Playfair Display', sans-serif; 
+}
+
+p {
+    font-family: 'Roboto', sans-serif; 
+    margin-bottom: 16px; 
+}
+
+.text-content {
+    font-family: 'Roboto', sans-serif; 
+}
+
+.hero {
+    
+    width: 100%;
+    height: auto;
+    background-image: url('../img/forsidebillede.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 56.25%;
+    
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    background-color: #F2E2C8;
+}
+
+
+.image-container {
+    position: relative; /* Tilføj positionering */
+    display: flex;
+    justify-content: center;
+}
+
+.bottle-frontpage-picture {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%; /* Tilføj bredde, hvis nødvendigt */
+    height: auto; /* Bevar aspektforhold */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    font-size: 23px;
+    
+}
+
+
+.red-text {
+    color: rgb(206, 0, 0); /* Gør teksten rød */
+    font-weight: bold;
+}
+
+
+.button-overlay {
+    position: absolute;
+    top: 82%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px 40px;
+    background-color: #00562D;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    /* cursor: pointer; */
+    font-size: 16px;
+    border: 2px solid white;
+}
+
+
+.strand-picture {
+    width: 35%;
+    height: 30%;
+    margin-left: -30px;
+    margin-top: 185px;
+    z-index: 3;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00562D;
+    
+}
+   
+
+.text-content {
+    flex: 1;
+    max-width: 500px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 14px;
+    z-index: 10;
+    font-family: 'roboto', sans serif;
+}
+
+
+.info-link a {
+    color: #ffffff; /* Ændrer linkets farve */
+    text-decoration: none; /* Fjerner understregning */
+}
+
+.image-content {
+    width: 280px;
+    z-index: 100;
+    
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+
+.brewery-picture {
+    width: 100%;
+    max-width: 400px; /* Sætter en max bredde for at gøre billedet mindre */
+    height: auto; /* Bevarer billedets aspektforhold */
+    display: block;
+   
+    
+}
+
+
+/* Media queries for mindre skærme */
+@media (max-width: 480px) {
+    .hero {
+        padding-top: 100%;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .text-overlay {
+        font-size: 10px; /* Mindre tekststørrelse på små skærme */
+        top: 15%; /* Juster placeringen hvis nødvendigt */
+    }
+    .button-overlay {
+        top: 85%; /* Juster placeringen hvis nødvendigt */
+        padding: 5px 20px; /* Mindre padding */
+        font-size: 10px; /* Mindre tekststørrelse */
+    }
+    .bottle-frontpage-picture {
+        margin-top: 20px; /* Mindre margin for at passe bedre på skærmen */
+        margin-bottom: 20px;
+        width: 300px;
+    }
+    .brewery-picture {
+        margin-top: 20px; /* Tilføj margin-top til bryggeribillede på mobil */
+        
+        max-width: 200px; /* Reducer max bredde på bryggeribillede på mobil */
+    }
+    .image-content {
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Sørg for, at containeren til billedet fylder skærmens bredde */
+    }
+    .text-content {
+        margin-top: 10px;
+        font-size:smaller;
+    }
+}
+
+@media (min-width: 481px) {
+    .content-wrapper {
+        flex-direction: row; /* Skift til række når skærmen er bred nok */
+        justify-content: center; /* Centrerer indholdet horisontalt */
+
+    }
+
+    .text-content, .image-content {
+        text-align: left; /* Justerer tekstindholdet tilbage til venstre for bredere skærme */
+    }
+
+    
+}
+/* Media queries for tabletstørrelser */
+@media (min-width: 600px) and (max-width: 900px) {
+    .hero {
+        padding-top: 75%;
+    }
+    .text-overlay {
+        font-size: 20px;
+    }
+    .button-overlay {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+    .strand-picture {
+        width: 40%;
+        height: 35%;
+        margin-left: 0;
+        margin-top: 150px;
+    }
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .text-content, .image-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .text-content {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
