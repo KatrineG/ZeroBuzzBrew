@@ -22,7 +22,7 @@ p {
     
     width: 100%;
     height: auto;
-    background-image: url('../img/forsidebillede.webg.webp');
+    background-image: url('../img/forsidebillede_resized.png');
     background-size: cover;
     background-position: center;
     position: relative;
